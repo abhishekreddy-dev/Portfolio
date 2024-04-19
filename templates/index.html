@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a software developer specializing in backend technologies, database management, and building scalable applications.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>CoAID-DEEP</h3>
+            <p>An intelligent framework for detecting COVID-19 misinformation on Twitter using NLP and machine learning.</p>
+        </div>
+        <div class="project">
+            <h3>Credit Card Fraud Detection</h3>
+            <p>A project focused on detecting fraudulent transactions using advanced machine learning algorithms.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright © 2023 Abhishek Reddy</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
